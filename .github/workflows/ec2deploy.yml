@@ -23,7 +23,7 @@ jobs:
             # Change to your project directory on the EC2 instance
             mkdir postdjdeploy
             cd postdjdeploy
-
+            git init
             # Pull the latest code from the Git repository
             git pull https://github.com/gajanankumar/post_cicd.git main
 
