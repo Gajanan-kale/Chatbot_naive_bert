@@ -45,7 +45,7 @@ jobs:
 
             # Run Django database migrations
             python manage.py migrate
-            python manage.py runserver
+            python manage.py runserver 
             
 
             # Collect static files (if you're serving them via Django)
