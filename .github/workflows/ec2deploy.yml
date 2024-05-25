@@ -35,7 +35,7 @@ jobs:
             sudo apt install python3.12-venv
             #sudo apt install python3-venv
 
-            python3 -m venv myenv
+            python3.12 -m venv myenv
 
             # Activate your virtual environment
             source myenv/bin/activate
