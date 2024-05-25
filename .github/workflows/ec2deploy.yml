@@ -21,11 +21,13 @@ jobs:
           key: ${{ secrets.EC_SSH_KEY }}
           script: |
             # Change to your project directory on the EC2 instance
-            mkdir postdjdeploy
-            cd postdjdeploy
+            rm -rf myenv
+            rm -rf postdjdeploy
+            mkdir postdjdeployn
+            cd postdjdeployn
             git init
             # Pull the latest code from the Git repository
-            git pull https://github.com/gajanankumar/post_cicd.git main
+            git pull https://github.com/Gajanan-kale/Chatbot_naive_bert_250524.git main
 
 
             # Activate your virtual environment
