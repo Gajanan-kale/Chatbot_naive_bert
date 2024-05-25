@@ -34,7 +34,8 @@ jobs:
             #pip install virtualenv
             sudo apt install python3-venv
 
-            virtualenv myenv
+            python3 -m venv myenv
+
             # Activate your virtual environment
             source myenv/bin/activate
 
