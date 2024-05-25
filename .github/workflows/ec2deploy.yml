@@ -23,21 +23,23 @@ jobs:
             # Change to your project directory on the EC2 instance
             rm -rf myenv
             rm -rf postdjdeploy
+            
             mkdir postdjdeployn
             cd postdjdeployn
             git init
             # Pull the latest code from the Git repository
             git pull https://github.com/Gajanan-kale/Chatbot_naive_bert_250524.git main
-
-
+            
+            virtualenv myenv
             # Activate your virtual environment
-            source penv/bin/activate
+            source myenv/bin/activate
 
             # Install or update Python dependencies
             pip install -r requirements.txt
 
             # Run Django database migrations
             python manage.py migrate
+            python manage.py runserver
 
             # Collect static files (if you're serving them via Django)
             python manage.py collectstatic --noinput
