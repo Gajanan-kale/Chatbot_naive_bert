@@ -29,7 +29,8 @@ jobs:
             git init
             # Pull the latest code from the Git repository
             git pull https://github.com/Gajanan-kale/Chatbot_naive_bert_250524.git main
-            pip install virtualenv
+            #pip install virtualenv
+            sudo pip3 install virtualenv 
             virtualenv myenv
             # Activate your virtual environment
             source myenv/bin/activate
