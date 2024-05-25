@@ -16,8 +16,8 @@
             rm -rf postdjdeploy
             rm -rf djangosuccess
             sudo killall python
-            mkdir postdjdeploy
-            cd postdjdeploy
+            mkdir postdjdeploy1
+            cd postdjdeploy1
             virtualenv myenv
   
             
